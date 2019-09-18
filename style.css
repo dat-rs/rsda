@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+}
+
+.header, .main {
+    margin-top: 50px;
+}
