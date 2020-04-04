@@ -1,0 +1,6 @@
+name: rsda
+markdown: kramdown
+collections:
+  artifacts:
+    output: true
+    permalink: /artifacts/:path/
