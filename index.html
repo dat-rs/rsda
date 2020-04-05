@@ -21,4 +21,20 @@ title: rsda
             
         </div>
         
+        <div class="row">
+            
+            <div class="col-12">
+                asas <br>
+                
+{% for artifact in site.artifacts %}
+{{ artifact.author | uniq | join: ", " }}
+{% endfor %}
+
+{{ site.artifacts.author }}            
+                <br>
+                mesas
+            </div>
+            
+        </div>
+        
     </div>
