@@ -1,20 +1,5 @@
-<!DOCTYPE html>
-	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<link rel="stylesheet" type="text/css" href="style.css">
-		</head>
-		
-		<body>
-			<div class="container">
+{% include header.html %}
 			
-			{{ content }}
+{{ content }}
 			
-			</div>
-			
-			<footer>
-	        </footer>
-	        
-		</body>
-		
-	</html>
+{% include footer.html %}
