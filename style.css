@@ -166,10 +166,6 @@ width: 40px;
     font-weight: 400;
 }
 
-.prev-next-link {
-    
-}
-
 .prev-next-link:hover {
     text-decoration: none;
     color: #4f9dd3;
@@ -178,7 +174,7 @@ width: 40px;
 .prev-next-link h2 {
     display: inline-block;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1;
     padding-top: 5px;
     border-bottom: 3px solid;
