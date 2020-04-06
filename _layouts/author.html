@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+
+<div class="container-fluid container-author">
+    
+    <div class="row">
+        
+        <div class="col-12">
+            <span class="page-title-label">Author</span>
+            <h2 class="title author">{{ page.name }}</h2>
+                    
+        </div>
+    </div>
+    
+    <div class="row artifacts-section">    
+       
+        <div class="col-12">
+            
+            <h3 class="page-sub-title">Artifacts</h3>
+            
+        </div>       
+                             
+                {% assign filtered_artifacts = site.artifacts | where: 'author_slug', page.slug %}
+                  {% for artifact in filtered_artifacts %}
+                  
+        <div class="col-12 col-md-6 col-lg-3">
+                   <span class="prev-next-label">{{ artifact.ref }}</span>
+                    <a class="prev-next-link" href="{{ artifact.url }}">
+                        <h2>{{ artifact.title }}</h2>
+                        <img class="grid-img" src="{{ artifact.thumbnail_image_path }}" alt="">
+                    </a>
+        </div>
+                  {% endfor %}
+            
+    </div>
+        
+        
+    </div>
+    
+</div>

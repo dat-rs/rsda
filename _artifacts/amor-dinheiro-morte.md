@@ -1,6 +1,7 @@
 ---
 title: O Amor, O Dinheiro e a Morte
-author: Sebastião Rodrigues
+author_name: Paulo-Guilherme
+author_slug: paulo-guilherme
 year: 1962
 origin: Portugal
 tags: [non-fiction]

@@ -1,6 +1,7 @@
 ---
 title: Estranha Solidão
-author: João da Câmara Leme
+author_name: João da Câmara Leme
+author_slug: joao-camara-leme
 year: 1964
 origin: Portugal
 tags: [crime fiction, Philippe Sollers, fiction]

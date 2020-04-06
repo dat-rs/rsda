@@ -4,3 +4,6 @@ collections:
   artifacts:
     output: true
     permalink: /artifacts/:path/
+  authors:
+    output: true
+    permalink: /authors/:path/

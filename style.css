@@ -70,13 +70,21 @@ body {
     color: #f2f2f2;
 }
 
-.container-main, .container-footer {
+.container-main {
+    margin-top: 15px;
+}
+
+.container-footer {
     background-color: black;
     color: #dedede;
 }
 
 .container-artifact, .container-footer {
     margin-top: 40px;
+}
+
+.container-author, .container-browse {
+    margin-top: 24px;
 }
 
 .grid-img {
@@ -100,13 +108,31 @@ a {
 
 
 
-h2.artifact {
+h2.title {
     display: inline-block;
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1;
+    padding-top: 3px;
+    margin-right: 15px;
     border-bottom: 4px solid;
     margin-bottom: 18px;
+}
+
+h2.title.artifact {
+    border-bottom: 4px solid #4f9dd3;
+}
+
+h2.title.author {
+    border-bottom: 4px solid #f2b34b;
+}
+
+.browse-link:hover {
+    text-decoration: none;
+}
+
+.browse-link.author:hover {
+    color: #f2b34b;
 }
 
 .artifact-img-container {
@@ -121,18 +147,17 @@ h2.artifact {
     
 }
 
-.artifact-deets {
-
-}
-
-.artifact-deets, .para-text, .caption, .prev-next-label  {
+.artifact-deets, .para-text, .caption, .prev-next-label, .page-title-label  {
     font-size: 13px;
     letter-spacing: normal;
     line-height: 1.3;
 }
 
-.deet-label, .prev-next-label {
+.deet-label, .prev-next-label, .page-title-label {
     display: block;
+}
+
+.deet-label, .prev-next-label {
     padding-top: 8.5px;
 }
 
@@ -157,6 +182,16 @@ position: absolute;
 width: 40px;
 }
 
+.deet-link:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.deet-link.author:hover {
+    color: #f2b34b;
+    border-bottom: 1px solid #f2b34b;
+}
+
 .row.prev-next {
     margin-top: 30px;
 }
@@ -178,4 +213,15 @@ width: 40px;
     line-height: 1;
     padding-top: 5px;
     border-bottom: 3px solid;
+}
+
+h3.page-sub-title {
+    font-weight: 800;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.row.artifacts-section {
+    margin-top: 30px;
 }
