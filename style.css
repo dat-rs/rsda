@@ -95,7 +95,6 @@ body {
 
 .prev-next-img {
     max-width: 100%;
-    margin-top: 8px;
     margin-bottom: 30px;
     background-color: black;
 }
@@ -110,7 +109,7 @@ a {
 
 h2.title {
     display: inline-block;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     font-weight: 600;
     line-height: 1;
     padding-top: 3px;
@@ -127,12 +126,44 @@ h2.title.author {
     border-bottom: 4px solid #f2b34b;
 }
 
+h2.title.origin {
+    border-bottom: 4px solid #d8709c;
+}
+
+h2.title.year {
+    border-bottom: 4px solid #4f9dd3;
+}
+
+h2.title.type {
+    border-bottom: 4px solid #e16640;
+}
+
+h2.title.tag {
+    border-bottom: 4px solid #93a64e;
+}
+
 .browse-link:hover {
     text-decoration: none;
 }
 
 .browse-link.author:hover {
     color: #f2b34b;
+}
+
+.browse-link.origin:hover {
+    color: #d8709c;
+}
+
+.browse-link.year:hover {
+    color: #4f9dd3;
+}
+
+.browse-link.type:hover {
+    color: #e16640;
+}
+
+.browse-link.tag:hover {
+    color: #93a64e;
 }
 
 .artifact-img-container {
@@ -192,6 +223,26 @@ width: 40px;
     border-bottom: 1px solid #f2b34b;
 }
 
+.deet-link.origin:hover {
+    color: #d8709c;
+    border-bottom: 1px solid #d8709c;
+}
+
+.deet-link.year:hover {
+    color: #4f9dd3;
+    border-bottom: 1px solid #4f9dd3;
+}
+
+.deet-link.type:hover {
+    color: #e16640;
+    border-bottom: 1px solid #e16640;
+}
+
+.deet-link.tag:hover {
+    color: #93a64e;
+    border-bottom: 1px solid #93a64e;
+}
+
 .row.prev-next {
     margin-top: 30px;
 }
@@ -208,8 +259,8 @@ width: 40px;
 
 .prev-next-link h2 {
     display: inline-block;
-    font-weight: 600;
-    font-size: 20px;
+    font-weight: 500;
+    font-size: 18px;
     line-height: 1;
     padding-top: 5px;
     border-bottom: 3px solid;

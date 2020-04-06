@@ -3,6 +3,7 @@ title: A Autópsia dos Estados Unidos
 author_name: Sebastião Rodrigues
 author_slug: sebastiao-rodrigues
 year: 1962
+yslug: 1962
 origin: Portugal
 tags: [non-fiction]
 ref: RS.010.0010

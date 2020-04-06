@@ -54,20 +54,16 @@ layout: default
                         
                         <span class="deet-label hanging">Year</span>
                         <a class="deet-link year" href="/years/{{ page.year }}">{{ page.year }}</a>
+                        {{ page.year }}
                         <br>
                         
                         <span class="deet-label hanging">Origin</span>
+                        {{ page.origin }}
                         <br>
                         
-                       
-                        
-                        <span class="deet-label hanging">Tagged 2</span>
-                        {% for tag in page.tags %}
-
-                        <a href="/tags/{{ tag }}">{{ tag }}</a>,
-
-                        {% endfor %}
-                        
+                        <span class="deet-label hanging">Tagged</span>
+                        {{ page.tags | sort | join: ", " }}
+                        <br>
                         
                         <span class="deet-label hanging">Reference</span>
                         {{ page.ref }}

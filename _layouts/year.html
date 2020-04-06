@@ -2,15 +2,12 @@
 layout: default
 ---
 
-
-<div class="container container-author">
-    
+<div class="container container-browse">
     <div class="row">
-        
         <div class="col-12">
             <span class="page-title-label">Author</span>
-            <h2 class="title author">{{ page.name }}</h2>
-                    
+            <h2 class="title year">{{ page.title }}</h2>
+            
         </div>
     </div>
     
@@ -22,10 +19,10 @@ layout: default
             
         </div>       
                              
-                {% assign filtered_artifacts = site.artifacts | where: 'author_slug', page.slug %}
+                {% assign filtered_artifacts = site.artifacts | where: year, page.name %}
                   {% for artifact in filtered_artifacts %}
                   
-        <div class="col-12 col-md-6 col-lg-3">
+        <div class="col-12 col-md-6 col-lg-4">
                     <a class="prev-next-link" href="{{ artifact.url }}">
                         <h2 class="title artifact">{{ artifact.title }}</h2>
                         <img class="grid-img" src="{{ artifact.thumbnail_image_path }}" alt="">
@@ -33,9 +30,6 @@ layout: default
         </div>
                   {% endfor %}
             
-    </div>
-        
-        
     </div>
     
 </div>
