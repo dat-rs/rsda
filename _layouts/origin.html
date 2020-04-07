@@ -3,13 +3,13 @@ layout: default
 ---
 
 
-<div class="container-fluid container-author">
+<div class="container container-author">
     
     <div class="row">
         
         <div class="col-12">
             <span class="page-title-label">Origin</span>
-            <h2 class="title author">{{ page.name }}</h2>
+            <h2 class="title origin">{{ page.name }}</h2>
                     
         </div>
     </div>
@@ -25,7 +25,7 @@ layout: default
                 {% assign filtered_artifacts = site.artifacts | where: 'origin', page.name %}
                   {% for artifact in filtered_artifacts %}
                   
-        <div class="col-12 col-md-6 col-lg-3">
+        <div class="col-12 col-md-6 col-lg-4">
                    
                     <a class="prev-next-link" href="{{ artifact.url }}">
                         <h2 class="title artifact">{{ artifact.title }}</h2>
