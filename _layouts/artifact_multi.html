@@ -54,7 +54,7 @@ layout: default
                         {% endfor %}
                         
                         <span class="deet-label hanging">Year</span>
-                        <a class="deet-link year" href="/years/{{ page.year }}">{{ page.year }}</a>
+                        <a class="deet-link year" href="/years/{{ page.year | remove_first: "y" }}">{{ page.year | remove_first: "y" }}</a>
                         <br>
                         
                         <span class="deet-label hanging">Origin</span>
@@ -78,7 +78,8 @@ layout: default
                 </div>
         </div>
          
-        {% if content | strip_newlines %}    
+        {% assign striped_content = content | strip_newlines %}
+        {% if striped_content %}    
                    
         <div class="row about">
                

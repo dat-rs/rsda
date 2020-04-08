@@ -1,8 +1,7 @@
 ---
 title: A Autópsia dos Estados Unidos
 author_name: ['Sebastião Rodrigues', 'Paulo-Guilherme']
-author_slug: sebastiao-rodrigues
-year: 1953
+year: y1953
 origin: Portugal
 type: book cover
 tags: [non-fiction]

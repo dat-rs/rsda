@@ -1,8 +1,8 @@
 ---
 title: Brasil - alguns apontamentos
 author_name: ['Manuel Motta Cardoso', 'Oskar']
-year: 1961
-origin: "Brasil"
+year: "y1961"
+origin: "Brazil"
 type: book
 tags: [Brazil, non-fiction, tourism, commerce, government]
 ref: RS.040.0007

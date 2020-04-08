@@ -1,10 +1,10 @@
 ---
 title: O Amor o Dinheiro e a Morte
 author_name: Paulo-Guilherme
-year: '1962'
-origin: United Kingdom
+year: y1960
+origin: Portugal
 type: book cover
-tags: [fiction, play]
+tags: [fiction, theatre]
 ref: RS.010.0003
 thumbnail_image_path: /images/rs-010-0003-amor-dinheiro-morte-thumbnail.jpg
 image_path: /images/rs-010-0003-amor-dinheiro-morte.jpg
