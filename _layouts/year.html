@@ -5,7 +5,7 @@ layout: default
 <div class="container container-browse">
     <div class="row">
         <div class="col-12">
-            <span class="page-title-label">Author</span>
+            <span class="page-title-label">Year</span>
             <h2 class="title year">{{ page.title }}</h2>
             
         </div>
@@ -19,7 +19,7 @@ layout: default
             
         </div>       
                              
-                {% assign filtered_artifacts = site.artifacts | where: year, page.name %}
+                {% assign filtered_artifacts = site.artifacts | where: 'year', page.name %}
                   {% for artifact in filtered_artifacts %}
                   
         <div class="col-12 col-md-6 col-lg-4">

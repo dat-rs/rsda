@@ -8,7 +8,7 @@ layout: default
     <div class="row">
         
         <div class="col-12">
-            <span class="page-title-label">Origin</span>
+            <span class="page-title-label">Type</span>
             <h2 class="title type">{{ page.name }}</h2>
                     
         </div>
@@ -22,7 +22,7 @@ layout: default
             
         </div>       
                              
-                {% assign filtered_artifacts = site.artifacts | where: 'origin', page.name %}
+                {% assign filtered_artifacts = site.artifacts | where: 'type', page.name %}
                   {% for artifact in filtered_artifacts %}
                   
         <div class="col-12 col-md-6 col-lg-4">
