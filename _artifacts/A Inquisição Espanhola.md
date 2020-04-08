@@ -6,8 +6,8 @@ origin: Portugal
 type: book cover
 tags: [non-fiction, history, Arthur Stanley Turberville]
 ref: RS.010.0013
-thumbnail_image_path: /images/RS.010.0013-inquisição-thumbnail.jpg
-image_path: /images/RS.010.0013-inquisição.jpg
+thumbnail_image_path: /images/RS.010.0013-inquisicao-thumbnail.jpg
+image_path: /images/RS.010.0013-inquisicao.jpg
 layout: artifact
 ---
 
