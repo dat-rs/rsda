@@ -82,8 +82,8 @@ layout: default
                
                 <div class="col-12 col-lg-8">
                     
-                  {% assign striped_content = content | strip_newlines %}
-                  {% if striped_content %}
+                  {% assign striped_content = page.content | strip_newlines %}
+                  {% if striped_content != "" %}
                   
                   <h3 class="page-sub-title">About</h3>
                   <section class="about-text">{{ content }}</section>

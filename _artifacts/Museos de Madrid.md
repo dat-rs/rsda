@@ -4,7 +4,7 @@ author_name: ['J. Ruiz Navarro', 'Francisco Espinosa']
 year: unknown
 origin: "Spain"
 type: brochure
-tags: [museum, Madrid, non-fiction, map, tourism, government]
+tags: [museum, Madrid, non-fiction, map, tourism, government, illustration, red, yellow]
 ref: RS.010.0012
 thumbnail_image_path: /images/RS.120.0001-museos-de-madrid-thumbnail.jpg
 image_path: /images/RS.120.0001-museos-de-madrid-1.jpg

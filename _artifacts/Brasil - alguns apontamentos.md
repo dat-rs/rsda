@@ -4,7 +4,7 @@ author_name: ['Manuel Motta Cardoso', 'Oskar']
 year: "y1961"
 origin: "Brazil"
 type: book
-tags: [Brazil, non-fiction, tourism, commerce, government]
+tags: [Brazil, non-fiction, tourism, commerce, government, illustration]
 ref: RS.040.0007
 thumbnail_image_path: /images/RS.040.0007-brasil-alguns-apontamentos-thumbnail.jpg
 image_path: /images/RS.040.0007-brasil-alguns-apontamentos-1.jpg

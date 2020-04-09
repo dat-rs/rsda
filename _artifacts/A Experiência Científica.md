@@ -1,0 +1,17 @@
+---
+title: A Experiência Científica
+author_name: ['Sebastião Rodrigues', 'Fernando Costa']
+year: y1979
+origin: Portugal
+type: booklet
+tags: [non-fiction, science, 'Cadernos de Iniciação Científica', Helvetica]
+ref: RS.250.0001
+thumbnail_image_path: /images/RS.250.0001-experiência-científica-thumbnail.jpg
+image_path: /images/RS.250.0001-experiência-científica-1.jpg
+image2_path: /images/RS.250.0001-experiência-científica-2.jpg
+image3_path: /images/RS.250.0001-experiência-científica-3.jpg
+image4_path: /images/RS.250.0001-experiência-científica-4.jpg
+layout: artifact_multi
+---
+
+Design by Sebastião Rodrigues, photographs by Fernando Costa. Cadernos de Iniciação Científica  #2.
