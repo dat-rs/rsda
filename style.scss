@@ -1,0 +1,498 @@
+---
+---
+
+@charset "UTF-8";
+/* CSS Document */
+
+$artifact-color: #e16640;
+$author-color: #f2b34b;
+$origin-color: #d8709c;
+$year-color: #4f9dd3;
+$type-color: #995488;
+$tag-color: #93a64e;
+$off-white: #f2f2f2;
+$off-white-2: #FAF7E8;
+
+
+
+body {
+    font-family: maple-web, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    background-color: $off-white-2;
+    color: black;
+}
+
+/* HEADER */
+
+.container-header {
+    background-color: black;
+}
+
+.header-logo {
+    max-height: 26px;
+    filter: invert(1);
+    margin: 7px 0;
+}
+
+h1.rsda {
+    font-size: 0.1rem;
+    margin-top: auto;
+    margin-bottom: auto;
+} 
+
+.header-text {
+    color: #f2f2f2;
+    margin-bottom: 0;
+    padding-bottom: 9px;
+    padding-left: 8px;
+}
+
+/* SUB HEADERS */
+
+#sub-header-0-id {
+    background: $artifact-color;
+    transition: 0.3s;
+    animation: smile-hue 10s infinite linear;
+}
+
+.collapse {
+    transition: 0.3s;
+}
+
+.sub-header-exp {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.sub-header-exp-col {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+.col-artifacts {
+    background-color: $artifact-color;
+}
+
+.sub-header-1, .col-authors {
+    background-color: $author-color;
+}
+
+.sub-header-2, .col-years {
+    background-color: $year-color;
+}
+
+.sub-header-3, .col-types {
+    background-color: $type-color;
+}
+
+.sub-header-4, .col-tags {
+    background-color: $tag-color;
+}
+
+.sub-header-5, .col-origins {
+    background-color: $origin-color;
+}
+
+.sub-header-link, .sub-header-link-0 {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding-top: 12px;
+    margin-bottom: 9px;
+    border-bottom: 1px solid;
+}
+
+.sub-header-link-exp {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: $off-white;
+    margin-left: 15px;
+    padding-top: 14px;
+    margin-bottom: 11px;
+    border-bottom: 1px solid;
+    line-height: 1;
+}
+
+.sub-header-link-exp.first {
+    margin-left: 23px;
+}
+
+.sub-header-link:hover, .sub-header-link-0, .sub-header-link-0:hover, .sub-header-link-exp:hover {
+    color: black;
+    text-decoration: none;
+
+}
+
+.sub-header-link {
+    color: $off-white;
+}
+
+/* CONTAINERS */
+
+.container-header {
+    max-height: 40px;
+}
+
+.container-main {
+    margin-top: 15px;
+}
+
+.container-artifact-index {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.container-footer {
+    background-color: black;
+    color: #dedede;
+    padding-top: 30px;
+    min-height: 150px;
+}
+
+.container-artifact, .container-artifact-index {
+    margin-top: 60px;
+}
+
+.container-author, .container-browse {
+    margin-top: 60px;
+    min-height: 90vh;
+}
+
+.holder {
+    min-height: 400px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.authors.holder {
+    background-color: $author-color;
+}
+
+.artifacts.holder {
+    background-color: $artifact-color;
+}
+
+.origins.holder {
+    background-color: $origin-color;
+}
+
+.years.holder {
+    background-color: $year-color;
+}
+
+.tags.holder {
+    background-color: $tag-color;
+}
+
+.types.holder {
+    background-color: $type-color;
+}
+
+.grid-img {
+    max-width: 100%;
+    margin-bottom: 15px;
+    background-color: black;
+}
+
+.prev-next-img {
+    max-width: 100%;
+    margin-top: 8px;
+    margin-bottom: 30px;
+    background-color: black;
+}
+
+a {
+    color: black;
+}
+
+/* H2 TITLES & LINKS + THEMATIC VARIATIONS */
+
+h2.title {
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1;
+    padding-top: 3px;
+    margin-right: 15px;
+    border-bottom: 4px solid;
+    margin-bottom: 18px;
+}
+
+h2.title.self {
+    font-size: 1.8rem;
+}
+
+h2.title.artifact {
+    border-bottom: 4px solid $artifact-color;
+}
+
+h2.title.author {
+    border-bottom: 4px solid $author-color;
+}
+
+h2.title.origin {
+    border-bottom: 4px solid $origin-color;
+}
+
+h2.title.year {
+    border-bottom: 4px solid $year-color;
+}
+
+h2.title.type {
+    border-bottom: 4px solid $type-color;
+}
+
+h2.title.tag {
+    border-bottom: 4px solid $tag-color;
+}
+
+h2.title.index {
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: -0.8px;
+    border-bottom: 2px solid black;
+}
+
+h2.title.index:hover {
+    border-bottom: none;
+}
+
+h2 .browse-link.index:hover {
+    border-bottom: 2px solid #f2f2f2;
+}
+
+.browse-link:hover {
+    text-decoration: none;
+}
+
+.browse-link.author:hover {
+    color: #f2b34b;
+}
+
+.browse-link.origin:hover {
+    color: #d8709c;
+}
+
+.browse-link.year:hover {
+    color: #4f9dd3;
+}
+
+.browse-link.type:hover {
+    color: $type-color;
+}
+
+.browse-link.tag:hover {
+    color: #93a64e;
+}
+
+.browse-link.index:hover {
+    color: #f2f2f2;
+}
+
+.container-author .row.about, .container-artifact .row.about {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.artifact-img-container {
+    background-color: black;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.artifact-img {
+    max-width: 100%;
+    max-height: 120vh;
+    padding: 10% 10%;
+}
+
+/* DEETS */
+
+.artifact-deets, .para-text, .caption, .header-text  {
+    font-size: 14px;
+    letter-spacing: normal;
+    line-height: 1.3;
+}
+
+.deet-label, .prev-next-label, .page-title-label {
+    display: block;
+}
+
+.deet-label, .prev-next-label {
+    padding-top: 8.5px;
+}
+
+.deet-label {
+    font-weight: 500;
+}
+
+
+.deet-label.hanging {
+position: relative;
+padding-top: 10px;
+margin-top: 10px;
+}
+
+.hanging::before {
+background-color: #000;
+top: 0;
+content: '';
+height: 1px;
+left: 0;
+position: absolute;
+width: 40px;
+}
+
+.deet-link:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.deet-link.author:hover {
+    color: #f2b34b;
+    border-bottom: 1px solid #f2b34b;
+}
+
+.deet-link.origin:hover {
+    color: #d8709c;
+    border-bottom: 1px solid #d8709c;
+}
+
+.deet-link.year:hover {
+    color: #4f9dd3;
+    border-bottom: 1px solid #4f9dd3;
+}
+
+.deet-link.type:hover {
+    color: $type-color;
+    border-bottom: 1px solid $type-color;
+}
+
+.deet-link.tag {
+
+    margin-right: 5px;
+}
+
+.deet-link.tag:hover {
+    color: #93a64e;
+    border-bottom: 1px solid #93a64e;
+}
+
+.row.prev-next {
+    margin-top: 45px;
+}
+
+.prev-next-label, .page-title-label {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+.prev-next-link.artifact:hover {
+    text-decoration: none;
+    color: $artifact-color;
+}
+
+
+.prev-next-link h2 {
+    display: inline;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.6;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    border-bottom: 3px solid;
+}
+
+h3.page-sub-title, h3.nav-link-title {
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+h3.nav-link-title a {
+    
+}
+
+h3.nav-link-title a:hover {
+    color: black;
+    text-decoration: none;
+    border-bottom: 3px solid;
+}
+
+.back-to {
+    margin-top: 5px;
+}
+
+.row.first {
+}
+
+.row.artifacts-section {
+    margin-top: 60px;
+}
+
+.about-text {
+    font-size: 16px;
+}
+
+.about-text a {
+    border-bottom: 1px solid;
+}
+
+.about-text a:hover {
+    text-decoration: none;
+    color: $artifact-color;
+    border-bottom: 1px solid $artifact-color;
+}
+
+.resource-link {
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
+    border-bottom: 1px solid #f2b34b;
+    padding-bottom: 2px;
+}
+
+.resource-link:hover {
+    text-decoration: none;
+    color: #f2b34b;
+}
+
+.footer-link {
+    font-weight: 700;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: $off-white;
+}
+
+.footer-link:hover {
+    text-decoration: none;
+    color: $off-white;
+    border-bottom: 3px solid;
+}
+
+@keyframes smile-hue {
+	
+	0% {filter: hue-rotate(0deg); }
+	10% {filter: hue-rotate(36deg); }
+	20% {filter: hue-rotate(72deg); }
+	30% {filter: hue-rotate(108deg); }
+	40% {filter: hue-rotate(144deg); }
+	50% {filter: hue-rotate(180deg); }
+	60% {filter: hue-rotate(216deg); }
+	70% {filter: hue-rotate(252deg); }
+	80% {filter: hue-rotate(288deg); }
+	90% {filter: hue-rotate(324deg); }
+	100% {filter: hue-rotate(360deg);}
+	
+}

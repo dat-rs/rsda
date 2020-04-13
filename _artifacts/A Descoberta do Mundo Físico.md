@@ -1,5 +1,5 @@
 ---
-title: A Autópsia dos Estados Unidos
+title: A Descoberta do Mundo Físico
 author_name: ['Sebastião Rodrigues', 'Fernando Costa']
 year: y1979
 origin: Portugal
@@ -15,6 +15,7 @@ image5_path: /images/RS.250.0000-descoberta-mundo-físico-5.jpg
 image6_path: /images/RS.250.0000-descoberta-mundo-físico-6.jpg
 image7_path: /images/RS.250.0000-descoberta-mundo-físico-7.jpg
 layout: artifact_multi
+date: 2020-04-07
 ---
 
 Design by Sebastião Rodrigues, photographs by Fernando Costa. Cadernos de Iniciação Científica  #1.

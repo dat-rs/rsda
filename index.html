@@ -3,16 +3,21 @@ layout: default
 title: rsda
 ---
 
-
-
-    <div class="container-fluid container-main">
+    <div class="container container-artifact-index">
         
         <div class="row">
+           
+        <div class="col-12">
+           
+            <h3 class="page-sub-title">Artifacts</h3>
+                    
+        </div>
             
-            {% for artifact in site.artifacts %}
-              <div class="col-12 col-md-6 col-xl-4">
+            {% assign sampled_artifacts = site.artifacts | sample: 12  %}
+            {% for artifact in sampled_artifacts %}
+              <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                   <a href="{{ artifact.url }}">
-                  
+
                       <img class="grid-img" src="{{ artifact.thumbnail_image_path }}" alt="{{ artifact.title }}">
                   
                   </a>
@@ -21,10 +26,147 @@ title: rsda
             
         </div>
         
-        <div class="row">
-            
+    </div>
+    
+    <div class="container-fluid authors holder"> 
+    
+        <div class="container">    
+       
+            <div class="row">
            
+                <div class="col-12 col-md-9">
+           
+                    <h3 class="page-sub-title">Authors</h3>
+                    
+                </div>
             
+                <div class="col-12">
+            
+                    {% for author in site.authors limit:24 %}
+
+                    <h2 class="title index"><a class="browse-link index" href="{{ author.url }}">{{ author.name }}</a></h2>
+                  
+                    {% endfor %}
+            
+                </div>
+            
+            </div>
+        
         </div>
+    
+    </div>
+       
+       
+    <div class="container-fluid years holder"> 
+    
+        <div class="container">    
+       
+            <div class="row">
+           
+                <div class="col-12 col-md-9">
+           
+                    <h3 class="page-sub-title">Years</h3>
+                    
+                </div>
+            
+                <div class="col-12 mt-2">
+            
+                    {% for year in site.years limit:24 %}
+
+                    <h2 class="title index"><a class="browse-link index" href="{{ year.url }}">{{ year.title }}</a></h2>
+                  
+                    {% endfor %}
+            
+                </div>
+            
+            </div>
+        
+        </div>
+    
+    </div>
+       
+    <div class="container-fluid types holder"> 
+    
+        <div class="container">    
+       
+            <div class="row">
+           
+                <div class="col-12 col-md-9">
+           
+                    <h3 class="page-sub-title">Types</h3>
+                    
+                </div>
+            
+                <div class="col-12 mt-2">
+            
+                    {% for type in site.types limit:24 %}
+
+                    <h2 class="title index"><a class="browse-link index" href="{{ type.url }}">{{ type.name }}</a></h2>
+                  
+                    {% endfor %}
+            
+                </div>
+            
+            </div>
+        
+        </div>
+    
+    </div>
+       
+    <div class="container-fluid origins holder"> 
+    
+        <div class="container">    
+       
+            <div class="row">
+           
+                <div class="col-12 col-md-9">
+           
+                    <h3 class="page-sub-title">Origins</h3>
+                    
+                </div>
+            
+                <div class="col-12 mt-2">
+            
+                    {% for origin in site.origins limit:24 %}
+
+                    <h2 class="title index"><a class="browse-link index" href="{{ origin.url }}">{{ origin.name }}</a></h2>
+                  
+                    {% endfor %}
+            
+                </div>
+            
+            </div>
+        
+        </div>
+    
+    </div>
+       
+    <div class="container-fluid tags holder"> 
+    
+        <div class="container">    
+       
+            <div class="row">
+           
+                <div class="col-12 col-md-9">
+           
+                    <h3 class="page-sub-title">Tags</h3>
+                    
+                </div>
+            
+                <div class="col-12 mt-2">
+            
+                    {% for tag in site.tags %}
+
+                    <h2 class="title index"><a class="browse-link index" href="{{ tag.url }}">{{ tag.name }}</a></h2>
+                  
+                    {% endfor %}
+            
+                </div>
+            
+            </div>
+        
+        </div>
+    
+    </div>
         
     </div>

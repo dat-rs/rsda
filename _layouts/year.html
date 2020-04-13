@@ -4,9 +4,11 @@ layout: default
 
 <div class="container container-browse">
     <div class="row">
-        <div class="col-12">
-            <span class="page-title-label">Year</span>
-            <h2 class="title year">{{ page.title }}</h2>
+       
+        <div class="col-9 order-md-1">
+           
+            <span class="page-title-label">year</span>
+            <h2 class="title year self">{{ page.title }}</h2>
             
         </div>
     </div>
@@ -22,7 +24,7 @@ layout: default
                   {% for artifact in filtered_artifacts %}
                   
         <div class="col-12 col-md-6 col-lg-4">
-                    <a class="prev-next-link" href="{{ artifact.url }}">
+                    <a class="prev-next-link artifact" href="{{ artifact.url }}">
                         <h2 class="title artifact">{{ artifact.title }}</h2>
                         <img class="prev-next-img" src="{{ artifact.thumbnail_image_path }}" alt="">
                     </a>

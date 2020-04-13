@@ -13,5 +13,3 @@ image3_path: /images/RS.250.0001-experiência-científica-3.jpg
 image4_path: /images/RS.250.0001-experiência-científica-4.jpg
 layout: artifact_multi
 ---
-
-Design by Sebastião Rodrigues, photographs by Fernando Costa. Cadernos de Iniciação Científica  #2.

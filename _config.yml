@@ -1,5 +1,20 @@
 name: rsda
 markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate-v2
+feed:
+  collections:
+    - artifacts
+pagination:
+  enabled: false
+  debug: false
+  per_page: 6
+  permalink: '/page/:num/'
+  title: ':title - page :num'
+  limit: 0
 collections:
   artifacts:
     output: true

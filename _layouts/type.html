@@ -7,11 +7,12 @@ layout: default
     
     <div class="row">
         
-        <div class="col-12">
-            <span class="page-title-label">Type</span>
-            <h2 class="title type">{{ page.name }}</h2>
+        <div class="col-12 col-md-9 order-md-1">
+            <span class="page-title-label">type</span>
+            <h2 class="title type self">{{ page.name }}</h2>
                     
         </div>
+        
     </div>
     
     <div class="row artifacts-section">    
@@ -27,7 +28,7 @@ layout: default
                   
         <div class="col-12 col-md-6 col-lg-4">
                    
-                    <a class="prev-next-link" href="{{ artifact.url }}">
+                    <a class="prev-next-link artifact" href="{{ artifact.url }}">
                         <h2 class="title artifact">{{ artifact.title }}</h2>
                         <img class="prev-next-img" src="{{ artifact.thumbnail_image_path }}" alt="">
                     </a>

@@ -30,7 +30,7 @@ layout: default
             
                 <div class="col-12">
                     
-                    <h2 class="title artifact">{{ page.title }}</h2>
+                    <h2 class="title artifact self">{{ page.title }}</h2>
                     
                 </div>
                
@@ -109,7 +109,7 @@ layout: default
                    
                     <span class="prev-next-label">Previous Artifact</span>
                 
-                    <a class="prev-next-link" href="{{ prevurl | escape_once }}">
+                    <a class="prev-next-link artifact" href="{{ prevurl | escape_once }}">
                         <h2 class="title artifact">{{ page.previous.title }}</h2>
                         <img class="prev-next-img" src="{{ page.previous.thumbnail_image_path }}" alt="">
                     </a>
@@ -126,7 +126,7 @@ layout: default
                
                     <span class="prev-next-label">Next Artifact</span>
                 
-                    <a class="prev-next-link" href="{{ nexturl | escape_once }}">
+                    <a class="prev-next-link artifact" href="{{ nexturl | escape_once }}">
                         <h2 class="title artifact">{{ page.next.title }}</h2>
                         <img class="prev-next-img" src="{{ page.next.thumbnail_image_path }}" alt="">
                     </a>
