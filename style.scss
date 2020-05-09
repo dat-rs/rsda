@@ -20,7 +20,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     -webkit-font-smoothing: antialiased;
-    background-color: $off-white-2;
+    background-color: $off-white;
     color: black;
 }
 
@@ -28,6 +28,7 @@ body {
 
 .container-header {
     background-color: black;
+    color: $off-white;
 }
 
 .header-logo {
@@ -47,6 +48,34 @@ h1.rsda {
     margin-bottom: 0;
     padding-bottom: 9px;
     padding-left: 8px;
+}
+
+.menu-link-container {
+    font-size: 42px;
+    font-weight: 600;
+    text-align: right;
+}
+
+.menu-link {
+    color: $artifact-color;
+    display: block;
+    line-height: 1;
+    transition: 0.3s;
+    animation: colors 6s infinite step-end;
+    width: 24px;
+    height: 42px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.menu-link:hover {
+    color: $off-white;
+    text-decoration: none;
+    transform: rotate(90deg);
+    transform-origin: center center;
+    animation: none;
+    animation-play-state: paused;
 }
 
 /* SUB HEADERS */
@@ -114,15 +143,11 @@ h1.rsda {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     color: $off-white;
-    margin-left: 15px;
+    margin-left: 23px;
     padding-top: 14px;
     margin-bottom: 11px;
     border-bottom: 1px solid;
     line-height: 1;
-}
-
-.sub-header-link-exp.first {
-    margin-left: 23px;
 }
 
 .sub-header-link:hover, .sub-header-link-0, .sub-header-link-0:hover, .sub-header-link-exp:hover {
@@ -219,46 +244,52 @@ h2.title {
     display: inline-block;
     font-size: 1.6rem;
     font-weight: 600;
-    line-height: 1;
+    line-height: 1.5;
     padding-top: 3px;
     margin-right: 15px;
-    border-bottom: 4px solid;
-    margin-bottom: 18px;
 }
 
 h2.title.self {
     font-size: 1.8rem;
+    line-height: 1.1;
 }
 
-h2.title.artifact {
+.browse-link.artifact {
     border-bottom: 4px solid $artifact-color;
 }
 
-h2.title.author {
+.browse-link.author {
     border-bottom: 4px solid $author-color;
 }
 
-h2.title.origin {
+.browse-link.origin {
     border-bottom: 4px solid $origin-color;
 }
 
-h2.title.year {
+.browse-link.year {
     border-bottom: 4px solid $year-color;
 }
 
-h2.title.type {
+.browse-link.type {
     border-bottom: 4px solid $type-color;
 }
 
-h2.title.tag {
+.browse-link.tag {
     border-bottom: 4px solid $tag-color;
+}
+
+.browse-link.index {
+    border-bottom: 2px solid;
+}
+
+.browse-link.index:hover {
+    border-bottom: 4px solid $off-white;
 }
 
 h2.title.index {
     font-size: 1.6rem;
     font-weight: 400;
     letter-spacing: -0.8px;
-    border-bottom: 2px solid black;
 }
 
 h2.title.index:hover {
@@ -481,6 +512,15 @@ h3.nav-link-title a:hover {
     border-bottom: 3px solid;
 }
 
+@keyframes colors {
+  0%    { color: $artifact-color; }
+  20%   { color: $author-color;   }
+  40%   { color: $origin-color;   }
+  60%   { color: $year-color;     }
+  80%   { color: $type-color;     }
+  100%  { color:  $tag-color;     }
+}
+
 @keyframes smile-hue {
 	
 	0% {filter: hue-rotate(0deg); }
@@ -496,3 +536,44 @@ h3.nav-link-title a:hover {
 	100% {filter: hue-rotate(360deg);}
 	
 }
+
+
+@media (min-width: 576px) {
+    
+    .sub-header-link-exp.authors {
+        margin-left: 15px;
+    } 
+    
+    .sub-header-link-exp.years {
+        margin-left: 15px;
+    } 
+    
+    .sub-header-link-exp.tags {
+        margin-left: 15px;
+    } 
+    
+}
+
+@media (min-width: 768px) {
+    
+    .sub-header-link-exp.origins {
+        margin-left: 15px;
+    } 
+    
+    .sub-header-link-exp.types {
+        margin-left: 15px;
+    }
+    
+    .sub-header-link-exp.years {
+        margin-left: 23px;
+    }
+    
+}
+
+@media (min-width: 992px) {
+    
+    .sub-header-link-exp.years {
+        margin-left: 15px;
+    } 
+}
+
