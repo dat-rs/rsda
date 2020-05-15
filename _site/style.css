@@ -1,10 +1,24 @@
 /* CSS Document */
+@font-face { font-family: 'Mori Gothic'; font-style: normal; font-weight: 100; src: local("Mori Gothic"), url("/fonts/MoriGothic-ExtraLight.woff2") format("woff2"); }
+
+@font-face { font-family: 'Mori Gothic'; font-style: normal; font-weight: 200; src: local("Mori Gothic"), url("/fonts/MoriGothic-Light.woff2") format("woff2"); }
+
+@font-face { font-family: 'Mori Gothic'; font-style: normal; font-weight: 300; src: local("Mori Gothic"), url("/fonts/MoriGothic-Normal.woff2") format("woff2"); }
+
+@font-face { font-family: 'Mori Gothic'; font-style: normal; font-weight: 400; src: local("Mori Gothic"), url("/fonts/MoriGothic-Regular.woff2") format("woff2"); }
+
+@font-face { font-family: 'Mori Gothic'; font-style: normal; font-weight: 500; src: local("Mori Gothic"), url("/fonts/MoriGothic-Medium.woff2") format("woff2"); }
+
+@font-face { font-family: 'Mori Gothic'; font-style: normal; font-weight: 600; src: local("Mori Gothic"), url("/fonts/MoriGothic-SemiBold.woff2") format("woff2"); }
+
+@font-face { font-family: 'Mori Gothic'; font-style: normal; font-weight: 700; src: local("Mori Gothic"), url("/fonts/MoriGothic-Bold.woff2") format("woff2"); }
+
 body { font-family: maple-web, sans-serif; font-weight: 400; font-size: 14px; -webkit-font-smoothing: antialiased; background-color: #f2f2f2; color: black; }
 
 /* HEADER */
-.container-header { background-color: black; color: #f2f2f2; }
+.container-header { background-color: #f2f2f2; color: black; }
 
-.header-logo { max-height: 26px; filter: invert(1); margin: 7px 0; }
+.header-logo { max-height: 50px; filter: invert(0); margin: 7px 0; }
 
 h1.rsda { font-size: 0.1rem; margin-top: auto; margin-bottom: auto; }
 
@@ -21,7 +35,7 @@ h1.rsda { font-size: 0.1rem; margin-top: auto; margin-bottom: auto; }
 
 .collapse { transition: 0.3s; }
 
-.sub-header-exp { padding-left: 0; padding-right: 0; }
+.sub-header-exp { padding-left: 0; padding-right: 0; overflow-x: hidden; }
 
 .sub-header-exp-col { padding-left: 0; padding-right: 0; }
 
@@ -46,11 +60,13 @@ h1.rsda { font-size: 0.1rem; margin-top: auto; margin-bottom: auto; }
 .sub-header-link { color: #f2f2f2; }
 
 /* CONTAINERS */
-.container-header { max-height: 40px; }
-
 .container-main { margin-top: 15px; }
 
 .container-artifact-index { margin-top: 15px; margin-bottom: 30px; }
+
+.container-artifact-index-2 { background-color: black; padding: 15px 0px; margin-bottom: 30px; }
+
+.container-blog-index { margin-top: 75px; margin-bottom: 90px; }
 
 .container-footer { background-color: black; color: #dedede; padding-top: 30px; min-height: 150px; }
 
@@ -74,14 +90,21 @@ h1.rsda { font-size: 0.1rem; margin-top: auto; margin-bottom: auto; }
 
 .grid-img { max-width: 100%; margin-bottom: 15px; background-color: black; }
 
+.grid-img-2 { max-width: 100%; background-color: black; }
+
 .prev-next-img { max-width: 100%; margin-top: 8px; margin-bottom: 30px; background-color: black; }
 
 a { color: black; }
 
 /* H2 TITLES & LINKS + THEMATIC VARIATIONS */
-h2.title { display: inline-block; font-size: 1.6rem; font-weight: 600; line-height: 1.5; padding-top: 3px; margin-right: 15px; }
+h2.title { display: inline-block; font-size: 1.6rem; line-height: 1; padding-top: 12px; margin-right: 15px; font-family: 'Mori Gothic'; font-weight: 500; }
+
+h2.title.index:hover { border-bottom: none; }
 
 h2.title.self { font-size: 1.8rem; line-height: 1.1; }
+
+/* deprecated */
+h2.title-2 { display: inline-block; font-size: 1.6rem; font-weight: 600; line-height: 1.5; padding-top: 3px; margin-right: 15px; }
 
 .browse-link.artifact { border-bottom: 4px solid #e16640; }
 
@@ -95,13 +118,13 @@ h2.title.self { font-size: 1.8rem; line-height: 1.1; }
 
 .browse-link.tag { border-bottom: 4px solid #93a64e; }
 
-.browse-link.index { border-bottom: 2px solid; }
+.browse-link.index { border-bottom: 2.5px solid; height: 100%; display: inline-block; }
+
+.browse-link-2.index { background-color: #f2f2f2; padding: 12px 18px 7px 18px; height: 100%; display: inline-block; font-size: 20px; border-radius: 25px; }
+
+.browse-link-2.index:hover { background-color: black; color: #f2f2f2; }
 
 .browse-link.index:hover { border-bottom: 4px solid #f2f2f2; }
-
-h2.title.index { font-size: 1.6rem; font-weight: 400; letter-spacing: -0.8px; }
-
-h2.title.index:hover { border-bottom: none; }
 
 h2 .browse-link.index:hover { border-bottom: 2px solid #f2f2f2; }
 
@@ -160,7 +183,7 @@ h2 .browse-link.index:hover { border-bottom: 2px solid #f2f2f2; }
 
 .prev-next-link h2 { display: inline; font-weight: 500; font-size: 18px; line-height: 1.6; padding-top: 5px; margin-bottom: 10px; border-bottom: 3px solid; }
 
-h3.page-sub-title, h3.nav-link-title { font-weight: 800; font-size: 14px; letter-spacing: 0.3px; text-transform: uppercase; margin-bottom: 8px; }
+h3.page-sub-title, h3.nav-link-title { display: inline-block; font-weight: 800; font-size: 16px; line-height: 1; letter-spacing: 0.3px; text-transform: uppercase; padding-bottom: 0; margin-bottom: 8px; border-bottom: 3px solid; }
 
 h3.nav-link-title a:hover { color: black; text-decoration: none; border-bottom: 3px solid; }
 
@@ -210,5 +233,21 @@ h3.nav-link-title a:hover { color: black; text-decoration: none; border-bottom: 
   .sub-header-link-exp.years { margin-left: 23px; } }
 
 @media (min-width: 992px) { .sub-header-link-exp.years { margin-left: 15px; } }
+
+.read-post { font-weight: 500; font-size: 14px; display: inline-block; margin-bottom: 1rem; }
+
+.post-excerpt p { margin-bottom: 0; }
+
+.post-excerpt p:after { content: '...'; }
+
+.col-authors-index { background-color: #f2b34b; }
+
+.col-years-index { background-color: #4f9dd3; }
+
+.section-index-container { padding: 15px; margin: 15px; min-height: 300px; }
+
+.col-types-index { background-color: #995488; }
+
+.col-origins-index { background-color: #d8709c; }
 
 /*# sourceMappingURL=style.css.map */
