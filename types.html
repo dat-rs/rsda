@@ -3,7 +3,9 @@ layout: default
 title: rsda | types
 ---
 
-<div class="container container-browse">
+<div class="types holder">
+    
+    <div class="container container-browse">
     <div class="row">
         
         <div class="col-12">
@@ -16,9 +18,11 @@ title: rsda | types
         
         {% for type in site.types %}
 
-            <h2 class="title type"><a class="browse-link type" href="{{ type.url }}">{{ type.name }}</a></h2>
+            <h2 class="title index"><a class="browse-link index" href="{{ type.url }}">{{ type.name }}</a></h2>
                   
         {% endfor %}
         </div>
     </div>
+</div>
+    
 </div>

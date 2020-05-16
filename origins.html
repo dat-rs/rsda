@@ -3,7 +3,9 @@ layout: default
 title: rsda | origins
 ---
 
-<div class="container container-browse">
+<div class="origins holder">
+    
+    <div class="container container-browse">
     <div class="row">
         
         <div class="col-12">
@@ -16,9 +18,11 @@ title: rsda | origins
         
         {% for origin in site.origins %}
 
-            <h2 class="title origin"><a class="browse-link origin" href="{{ origin.url }}">{{ origin.name }}</a></h2>
+            <h2 class="title index"><a class="browse-link index" href="{{ origin.url }}">{{ origin.name }}</a></h2>
                   
         {% endfor %}
         </div>
     </div>
+</div>
+    
 </div>

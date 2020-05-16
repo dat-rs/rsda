@@ -2,24 +2,28 @@
 layout: default
 title: rsda | all artifacts
 ---
-    
-   <div class="container container-browse">
-   
-    <div class="row">
-        
-        <div class="col-12">
-            
-            <h3 class="page-sub-title">Authors</h3>
-            
-        </div>
-        
-        <div class="col-12">
-        
-        {% for author in site.authors %}
 
-            <h2 class="title author"><a class="browse-link author" href="{{ author.url }}">{{ author.name }}</a></h2>
-                  
-        {% endfor %}
+<div class="authors holder">
+
+    <div class="container container-browse">
+
+        <div class="row">
+
+            <div class="col-12">
+
+                <h3 class="page-sub-title">Authors</h3>
+
+            </div>
+
+            <div class="col-12">
+
+                {% for author in site.authors %}
+
+                <h2 class="title index"><a class="browse-link index" href="{{ author.url }}">{{ author.name }}</a></h2>
+
+                {% endfor %}
+            </div>
         </div>
     </div>
+
 </div>

@@ -1,6 +1,6 @@
 ---
-layout: post
-title:  "A Way of Being"
+layout: post_sidebar
+title:  "Um Dia Com… Sebastião Rodrigues [1970]"
 thumbnail_image_path: /images/rsda-comp-3.jpg
 author: Ricardo Santos
 excerpt_separator: <!--more-->
